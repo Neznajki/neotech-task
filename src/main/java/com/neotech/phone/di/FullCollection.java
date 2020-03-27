@@ -1,13 +1,20 @@
-package com.neotech.phone;
+package com.neotech.phone.di;
 
 import com.neotech.contract.ResultEntryInterface;
+import com.neotech.phone.CodeData;
+import com.neotech.phone.RawPhoneEntity;
+import com.neotech.phone.ZoneCollection;
 import com.neotech.phone.collections.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 
+@Component
 public class FullCollection {
     HashMap<String, ZoneCollection> supportedZoneCollections = new HashMap<>();
 
+    @Autowired
     public FullCollection()
     {
         this.supportedZoneCollections.put("1", new NorthAmericaPlan());

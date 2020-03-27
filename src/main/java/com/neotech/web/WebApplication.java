@@ -1,6 +1,7 @@
 package com.neotech.web;
 
 import com.neotech.app.Container;
+import com.neotech.app.Executor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,6 @@ public class WebApplication {
 
     @GetMapping(phoneCheckerPath)
     public String phoneChecker(@RequestParam(value = "phone", defaultValue = "") String phone) {
-        return Container.getInstance().getExecutor().execute(phone);
+        return Container.getContainerInstance().getBean(Executor.class).execute(phone);
     }
 }

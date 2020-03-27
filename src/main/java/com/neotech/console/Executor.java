@@ -8,6 +8,6 @@ public class Executor {
         if (args.length == 0) {
             throw new RuntimeException("phone parameter is required");
         }
-        System.out.println(Container.getInstance().getExecutor().execute(args[0]));
+        System.out.println(Container.getContainerInstance().getBean(com.neotech.app.Executor.class).execute(args[0]));
     }
 }
