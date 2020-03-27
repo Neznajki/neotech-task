@@ -43,3 +43,18 @@ Uzdevuma izpildes termiņš ir 1 nedēļa kopš uzdevuma saņemšanas.
 
 * making backend functionality 8h ~
 * making tests 4h ~
+* making FE part 2h ~
+
+## launching application
+* launch web server
+```shell script
+java -cp out/artifacts/neotech-test.jar com.neotech.web.WebApplication
+```
+* execute console
+```shell script
+java -cp out/artifacts/neotech-test.jar com.neotech.console.Executor +455555
+```
+
+## help
+* main page GUI (http://localhost:8080/)
+* api path (http://localhost:8080/rest/json/check/phone?phone=%2B37121293)

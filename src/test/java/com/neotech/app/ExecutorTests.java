@@ -2,21 +2,23 @@ package com.neotech.app;
 
 import com.neotech.web.response.converter.JsonResponse;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.lang.reflect.Field;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = Executor.class)
 public class ExecutorTests {
-    @Autowired
     Executor executor;
+
+    @Before
+    public void setUp()
+    {
+        this.executor = Container.getContainerInstance().getBean(Executor.class);
+    }
 
     @Test
     public void testPhoneGetting()
@@ -24,10 +26,10 @@ public class ExecutorTests {
         Assert.assertEquals("{\n" +
                 "  \"exceptionMessage\" : null,\n" +
                 "  \"result\" : {\n" +
-                "    \"type\" : \"country\",\n" +
-                "    \"name\" : \"United States\",\n" +
                 "    \"code\" : \"US\",\n" +
-                "    \"matchedPhoneCode\" : \"1\"\n" +
+                "    \"matchedPhoneCode\" : \"1\",\n" +
+                "    \"type\" : \"country\",\n" +
+                "    \"name\" : \"United States\"\n" +
                 "  }\n" +
                 "}", executor.execute("+1111"));
     }
@@ -65,26 +67,24 @@ public class ExecutorTests {
         Assert.assertEquals("{\n" +
                 "  \"exceptionMessage\" : null,\n" +
                 "  \"result\" : {\n" +
-                "    \"commentContent\" : \"unassigned\",\n" +
-                "    \"matchedPhoneCode\" : \"214\"\n" +
+                "    \"matchedPhoneCode\" : \"214\",\n" +
+                "    \"commentContent\" : \"unassigned\"\n" +
                 "  }\n" +
                 "}", executor.execute("+21444"));
     }
 
     @Test
     public void fatalExceptionTest() throws Throwable {
-        ApplicationContext mockConfig = Mockito.mock(ApplicationContext.class);
         JsonResponse responseParser = Mockito.mock(JsonResponse.class);
 
-        Field containerField = Container.class.getDeclaredField("instance");
+        Field containerField = executor.getClass().getDeclaredField("jsonResponse");
         containerField.setAccessible(true);
-        containerField.set(null, mockConfig);
+        containerField.set(executor, responseParser);
 
-        Mockito.when(mockConfig.getBean(JsonResponse.class)).thenReturn(responseParser);
         Mockito.when(responseParser.getJsonString(Mockito.any())).thenThrow(new RuntimeException("unit test"));
 
         Assert.assertEquals("fatal exception !!", executor.execute("11"));
 
-        containerField.set(null, null);
+        containerField.set(executor, Container.getContainerInstance().getBean(JsonResponse.class));
     }
 }
