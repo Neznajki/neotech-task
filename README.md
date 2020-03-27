@@ -44,6 +44,7 @@ Uzdevuma izpildes termiņš ir 1 nedēļa kopš uzdevuma saņemšanas.
 * making backend functionality 8h ~
 * making tests 4h ~
 * making FE part 2h ~
+* preparing launch docs fixing tests 2h~
 
 ## launching application
 * launch web server
