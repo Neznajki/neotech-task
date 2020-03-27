@@ -7,12 +7,13 @@ import com.neotech.phone.ZoneCollection;
 
 public class EuropeFourPlan extends ZoneCollection {
     public EuropeFourPlan() {
-        this.supportedCodes.add(new CodeData("42", new Commentary("Discontinued (was assigned to  Czechoslovakia until its breakup)")));
+//        this.supportedCodes.add(new CodeData("42", new Commentary("Discontinued (was assigned to  Czechoslovakia until its breakup)")));//useless
         this.supportedCodes.add(new CodeData("422", new Commentary()));
         this.supportedCodes.add(new CodeData("424", new Commentary()));
         this.supportedCodes.add(new CodeData("425", new Commentary()));
         this.supportedCodes.add(new CodeData("426", new Commentary()));
         this.supportedCodes.add(new CodeData("427", new Commentary()));
+        this.supportedCodes.add(new CodeData("428", new Commentary()));
         this.supportedCodes.add(new CodeData("429", new Commentary()));
 
         this.supportedCodes.add(new CodeData("40", new Romania()));

@@ -3,8 +3,8 @@ package com.neotech.phone;
 import com.neotech.contract.ResultEntryInterface;
 
 public class Commentary implements ResultEntryInterface {
-    String commentContent = "unassigned";
-    String matchedPhoneCode;
+    public String matchedPhoneCode;
+    public String commentContent = "unassigned";
 
     public Commentary() {}
 

@@ -12,7 +12,7 @@ public class AfricaPlan extends ZoneCollection {
         this.supportedCodes.add(new CodeData("215", new Commentary()));
         this.supportedCodes.add(new CodeData("217", new Commentary()));
         this.supportedCodes.add(new CodeData("219", new Commentary()));
-        this.supportedCodes.add(new CodeData("250", new Commentary("unassigned, was intended for  People's Republic of Zanzibar but never implemented – see +255 Tanzania")));
+        this.supportedCodes.add(new CodeData("259", new Commentary("unassigned, was intended for  People's Republic of Zanzibar but never implemented – see +255 Tanzania")));
         this.supportedCodes.add(new CodeData("28", new Commentary("+28x – unassigned (Reserved for country code expansion)[1]")));
         this.supportedCodes.add(new CodeData("292", new Commentary()));
         this.supportedCodes.add(new CodeData("293", new Commentary()));

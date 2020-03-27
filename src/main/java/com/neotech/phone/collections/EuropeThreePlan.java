@@ -7,8 +7,8 @@ import com.neotech.phone.ZoneCollection;
 
 public class EuropeThreePlan extends ZoneCollection {
     public EuropeThreePlan() {
-        this.supportedCodes.add(new CodeData("37", new Commentary("Discontinued (was assigned to  East Germany until reunifying with the West. See Germany's country code +49 below)")));
-        this.supportedCodes.add(new CodeData("38", new Commentary("Discontinued (was assigned to the  Socialist Federal Republic of Yugoslavia until its break-up)")));
+//        this.supportedCodes.add(new CodeData("37", new Commentary("Discontinued (was assigned to  East Germany until reunifying with the West. See Germany's country code +49 below)")));//useless
+//        this.supportedCodes.add(new CodeData("38", new Commentary("Discontinued (was assigned to the  Socialist Federal Republic of Yugoslavia until its break-up)")));//useless
         this.supportedCodes.add(new CodeData("384", new Commentary()));
         this.supportedCodes.add(new CodeData("388", new Commentary("Discontinued (was assigned to the European Telephony Numbering Space)[1][2]")));
 

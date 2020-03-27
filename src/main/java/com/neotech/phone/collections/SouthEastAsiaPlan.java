@@ -8,7 +8,7 @@ import com.neotech.phone.ZoneCollection;
 public class SouthEastAsiaPlan extends ZoneCollection {
     public SouthEastAsiaPlan() {
         this.supportedCodes.add(new CodeData("671", new Commentary("formerly Guam – Now included in NANP as code +1-671 (See Zone 1, above)")));
-        this.supportedCodes.add(new CodeData("680", new Commentary("formerly American Samoa – Now included in NANP as code +1-684 (See Zone 1, above)")));
+        this.supportedCodes.add(new CodeData("684", new Commentary("formerly American Samoa – Now included in NANP as code +1-684 (See Zone 1, above)")));
         this.supportedCodes.add(new CodeData("693", new Commentary()));
         this.supportedCodes.add(new CodeData("694", new Commentary()));
         this.supportedCodes.add(new CodeData("695", new Commentary()));

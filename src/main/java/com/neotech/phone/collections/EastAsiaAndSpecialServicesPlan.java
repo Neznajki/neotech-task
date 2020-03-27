@@ -22,6 +22,7 @@ public class EastAsiaAndSpecialServicesPlan extends ZoneCollection {
         this.supportedCodes.add(new CodeData("854", new Commentary()));
         this.supportedCodes.add(new CodeData("857", new Commentary("unassigned, formerly ANAC satellite service")));
         this.supportedCodes.add(new CodeData("858", new Commentary("unassigned, formerly ANAC satellite service")));
+        this.supportedCodes.add(new CodeData("859", new Commentary()));
 
         this.supportedCodes.add(new CodeData("870", new Commentary("Inmarsat \"SNAC\" service")));
         this.supportedCodes.add(new CodeData("871", new Commentary("unassigned (formerly used by Inmarsat, Atlantic East), discontinued in 2008")));
@@ -49,7 +50,6 @@ public class EastAsiaAndSpecialServicesPlan extends ZoneCollection {
         this.supportedCodes.add(new CodeData("84", new Vietnam()));
 
         this.supportedCodes.add(new CodeData("850", new NorthKorea()));
-        this.supportedCodes.add(new CodeData("859", new Commentary()));
         this.supportedCodes.add(new CodeData("852", new HongKong()));
         this.supportedCodes.add(new CodeData("853", new Macau()));
         this.supportedCodes.add(new CodeData("855", new Cambodia()));

@@ -4,10 +4,10 @@ import com.neotech.contract.ResultEntryInterface;
 
 //could be moved to mysql to reduce code complexity and allow to edit data.
 public class Country  implements ResultEntryInterface {
-    protected String type = "country";
-    protected String name;
-    protected String code;
-    protected String matchedPhoneCode;
+    public String code;
+    public String matchedPhoneCode;
+    String type = "country";
+    String name;
 
     public Country(String name, String code) {
         this.name = name;
