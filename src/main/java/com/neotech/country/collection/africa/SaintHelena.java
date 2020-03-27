@@ -4,6 +4,6 @@ import com.neotech.country.Country;
 
 public class SaintHelena extends Country {
     public SaintHelena() {
-        super("Saint Helena", "SH-AC");
+        super("Saint Helena", "SH");
     }
 }

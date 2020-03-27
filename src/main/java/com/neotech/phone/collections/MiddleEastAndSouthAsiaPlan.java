@@ -1,5 +1,6 @@
 package com.neotech.phone.collections;
 
+import com.neotech.country.collection.europe.Cyprus;
 import com.neotech.country.collection.middle.east.*;
 import com.neotech.phone.CodeData;
 import com.neotech.phone.Commentary;
@@ -16,7 +17,7 @@ public class MiddleEastAndSouthAsiaPlan extends ZoneCollection {
         this.supportedCodes.add(new CodeData("999", new Commentary("reserved for future global service.")));
 
         this.supportedCodes.add(new CodeData("90", new Turkey()));
-        this.supportedCodes.add(new CodeData("90392", new NorthernCyprus()));
+        this.supportedCodes.add(new CodeData("90392", new Cyprus()));
         this.supportedCodes.add(new CodeData("91", new India()));
         this.supportedCodes.add(new CodeData("92", new Pakistan()));
         this.supportedCodes.add(new CodeData("92582", new AzadKashmir()));

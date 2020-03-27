@@ -4,6 +4,6 @@ import com.neotech.country.Country;
 
 public class SouthOssetia extends Country {
     public SouthOssetia() {
-        super("South Ossetia", "??");
+        super("South Ossetia", "unknown code South Ossetia");
     }
 }

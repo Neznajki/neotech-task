@@ -1,7 +1,6 @@
 package com.neotech.phone.collections;
 
 import com.neotech.country.collection.europe.*;
-import com.neotech.country.collection.north.american.Montserrat;
 import com.neotech.phone.CodeData;
 import com.neotech.phone.Commentary;
 import com.neotech.phone.ZoneCollection;
@@ -48,7 +47,7 @@ public class EuropeThreePlan extends ZoneCollection {
 
         this.supportedCodes.add(new CodeData("380", new Ukraine()));
         this.supportedCodes.add(new CodeData("381", new Serbia()));
-        this.supportedCodes.add(new CodeData("382", new Montserrat()));
+        this.supportedCodes.add(new CodeData("382", new Montenegro()));
         this.supportedCodes.add(new CodeData("383", new Kosovo()));
         this.supportedCodes.add(new CodeData("385", new Croatia()));
         this.supportedCodes.add(new CodeData("386", new Slovenia()));

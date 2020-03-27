@@ -4,6 +4,6 @@ import com.neotech.country.Country;
 
 public class Cyprus extends Country {
     public Cyprus() {
-        super("Cyprus", "CY");
+        super("Cyprus (NorthernCyprus)", "CY");
     }
 }

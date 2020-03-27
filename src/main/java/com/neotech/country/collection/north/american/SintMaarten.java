@@ -4,6 +4,6 @@ import com.neotech.country.Country;
 
 public class SintMaarten extends Country {
     public SintMaarten() {
-        super("Sint Maarten", "SX");
+        super("Sint Maarten", "NUS-SX");
     }
 }

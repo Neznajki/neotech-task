@@ -52,7 +52,7 @@ public class AfricaPlan extends ZoneCollection {
         this.supportedCodes.add(new CodeData("240", new EquatorialGuinea()));
         this.supportedCodes.add(new CodeData("241", new Gabon()));
         this.supportedCodes.add(new CodeData("242", new RepublicOfTheCongo()));
-        this.supportedCodes.add(new CodeData("243", new DemocraticRepublicOfTheCongo()));
+        this.supportedCodes.add(new CodeData("243", new RepublicOfTheCongo()));
         this.supportedCodes.add(new CodeData("244", new Angola()));
         this.supportedCodes.add(new CodeData("245", new GuineaBissau()));
         this.supportedCodes.add(new CodeData("246", new BritishIndianOceanTerritory()));

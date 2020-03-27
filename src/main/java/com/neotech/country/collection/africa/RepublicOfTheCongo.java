@@ -4,6 +4,6 @@ import com.neotech.country.Country;
 
 public class RepublicOfTheCongo extends Country {
     public RepublicOfTheCongo() {
-        super("Republic of the Congo", "CD");
+        super("(Democratic) Republic of the Congo", "CD");
     }
 }

@@ -15,6 +15,7 @@ public class NorthAmericaPlan extends ZoneCollection {
         this.supportedCodes.add(new CodeData("1787", new PuertoRico()));
         this.supportedCodes.add(new CodeData("1939", new PuertoRico()));
         this.supportedCodes.add(new CodeData("1242", new Bahamas()));
+        this.supportedCodes.add(new CodeData("1246", new Barbados()));
         this.supportedCodes.add(new CodeData("1264", new Anguilla()));
         this.supportedCodes.add(new CodeData("1268", new AntiguaAndBarbuda()));
         this.supportedCodes.add(new CodeData("1284", new BritishVirginIslands()));

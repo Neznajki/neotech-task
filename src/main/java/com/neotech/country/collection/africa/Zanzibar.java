@@ -4,6 +4,6 @@ import com.neotech.country.Country;
 
 public class Zanzibar extends Country {
     public Zanzibar() {
-        super("Zanzibar", "??");
+        super("Zanzibar", "unknown code Zanzibar");
     }
 }

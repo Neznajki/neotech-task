@@ -37,10 +37,10 @@ public class AmericasPlan extends ZoneCollection {
         this.supportedCodes.add(new CodeData("597", new Suriname()));
         this.supportedCodes.add(new CodeData("598", new Uruguay()));
         this.supportedCodes.add(new CodeData("599", new NetherlandsAntilles()));
-        this.supportedCodes.add(new CodeData("5993", new SintEustatius()));
-        this.supportedCodes.add(new CodeData("5994", new Saba()));
+        this.supportedCodes.add(new CodeData("5993", new BonaireAndSintEustatiusAndSaba()));
+        this.supportedCodes.add(new CodeData("5994", new BonaireAndSintEustatiusAndSaba()));
         this.supportedCodes.add(new CodeData("5995", new SintMaarten()));
-        this.supportedCodes.add(new CodeData("5997", new Bonaire()));
+        this.supportedCodes.add(new CodeData("5997", new BonaireAndSintEustatiusAndSaba()));
         this.supportedCodes.add(new CodeData("5998", new Aruba()));
         this.supportedCodes.add(new CodeData("5999", new Curacao()));
 
