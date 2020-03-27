@@ -10,9 +10,9 @@
     </parent>
     <groupId>com.neotech</groupId>
     <artifactId>web</artifactId>
-    <version>0.1</version>
-    <name>web</name>
-    <description>Demo project for Spring Boot</description>
+    <version>1.0</version>
+    <name>phone validator</name>
+    <description>Demo project Neotech homework</description>
 
     <properties>
         <java.version>11</java.version>
