@@ -8,27 +8,36 @@ import com.neotech.web.Response;
 import com.neotech.web.response.converter.JsonResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Executor {
+    final Handler handler;
+    final JsonResponse jsonResponse;
+
+    @Autowired
+    public Executor(Handler handler, JsonResponse jsonResponse) {
+        this.handler = handler;
+        this.jsonResponse = jsonResponse;
+    }
+
     public String execute(String phone)
     {
         var response = new Response(new StateNotChangedException("response is not assigned"));
 
         try {
-            var handler = Container.getContainerInstance().getBean(Handler.class);
             var phoneData = new RawPhoneEntity(phone);
 
-            handler.validatePhone(phoneData);
+            this.handler.validatePhone(phoneData);
 
-            response = new Response(handler.getPhoneEntry(phoneData));
+            response = new Response(this.handler.getPhoneEntry(phoneData));
         } catch (InvalidPhoneException exception) {
             response = new Response(exception);
         }
 
         try {
-            return Container.getContainerInstance().getBean(JsonResponse.class).getJsonString(response);
+            return this.jsonResponse.getJsonString(response);
         } catch (Throwable exception) {
             // could add logger to log somewhere
             return handleResponseParseException(exception);
@@ -40,7 +49,7 @@ public class Executor {
         try {
             response = new Response(exception);
 
-            return Container.getContainerInstance().getBean(JsonResponse.class).getJsonString(response);
+            return this.jsonResponse.getJsonString(response);
         } catch (Throwable e) {
             Logger logger = LogManager.getLogger(Executor.class);
             logger.fatal("fatal exception !!", e);

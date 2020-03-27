@@ -42,3 +42,4 @@ Uzdevuma izpildes termiņš ir 1 nedēļa kopš uzdevuma saņemšanas.
 ## timeline
 
 * making backend functionality 8h ~
+* making tests 4h ~

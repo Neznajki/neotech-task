@@ -1,24 +1,22 @@
 package com.neotech.web;
 
-import com.neotech.app.Container;
-import com.neotech.app.Executor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
 public class WebApplication {
-    private static final String phoneCheckerPath = "/rest/json/check/phone";
-
     public static void main(String[] args) {
         SpringApplication.run(WebApplication.class, args);
     }
 
-    @GetMapping(phoneCheckerPath)
-    public String phoneChecker(@RequestParam(value = "phone", defaultValue = "") String phone) {
-        return Container.getContainerInstance().getBean(Executor.class).execute(phone);
-    }
+//    @Bean
+//    public CommandLineRunner commandLineRunner(ApplicationContext context) {
+//        return args -> {
+//            if (args.length == 0) {
+//                throw new RuntimeException("phone parameter is required");
+//            }
+//
+//            System.out.println(context.getBean(com.neotech.app.Executor.class).execute(args[0]));
+//        };
+//    }
 }

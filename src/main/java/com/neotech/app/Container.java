@@ -8,7 +8,7 @@ public class Container {
     public static ApplicationContext getContainerInstance()
     {
         if (instance == null) {
-            instance = new AnnotationConfigApplicationContext(Config.class);
+            instance = new AnnotationConfigApplicationContext(ApiConfig.class);
         }
 
         return instance;
