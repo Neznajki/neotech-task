@@ -1,6 +1,7 @@
 # neotech-task
 neotech task
 
+* task
 ```
 Funkcionālās prasības:
 
@@ -36,3 +37,8 @@ Priekš REST pieprasījumiem var izmantot jebkuru frontend bibliotēku / ietvaru
 (piemēram, jQuery). Datu validācija un testi ir obligāti.
 Uzdevuma izpildes termiņš ir 1 nedēļa kopš uzdevuma saņemšanas.
 ```
+
+
+## timeline
+
+* making backend functionality 8h ~
