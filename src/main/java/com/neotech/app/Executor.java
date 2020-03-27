@@ -31,11 +31,11 @@ public class Executor {
             return Container.getContainerInstance().getBean(JsonResponse.class).getJsonString(response);
         } catch (Throwable exception) {
             // could add logger to log somewhere
-            return handleFinalException(exception);
+            return handleResponseParseException(exception);
         }
     }
 
-    private String handleFinalException(Throwable exception) {
+    private String handleResponseParseException(Throwable exception) {
         Response response;
         try {
             response = new Response(exception);
